@@ -1,0 +1,755 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+header{
+    margin-bottom: 2rem;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans', sans-serif;
+}
+body{
+    background-color: #121315;
+    color: white;
+}
+
+.topic{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    border-bottom: 1px ridge rgba(255, 255, 255, .2);
+}
+
+span a{
+    color: white;
+    text-decoration: none;
+}
+
+.topic h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.8rem;
+}
+
+.nft{
+    color: #ca159b;
+}
+
+.nft-icon span a{
+    padding: .5rem .7rem;
+    text-decoration: none;
+}
+
+.nft-icon span a:hover{
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 4px;
+    transition: .5s background-color;
+}
+
+.nft-icon a.active{
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 4px;
+}
+
+.profile-image{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.profile-image-content{
+    display: flex;
+}
+
+.profile-image-content span{
+    margin-right: .8rem;
+    margin-top: .4rem;
+}
+
+.sub-content{
+    margin-left: .5rem;
+    margin-right: .7rem;
+}
+
+.sub-content .eth{
+    text-transform: uppercase;
+    opacity: revert;
+    color: #ca159b;
+}
+
+.profile-image-content2{
+    display: flex;
+}
+
+.profile-image-content2 img{
+    margin-left: .5rem;
+}
+
+.profile-image-content2 p{
+    font-size: .8rem;
+}
+
+.profile-image-content p{
+    font-size: .8rem;
+}
+
+.profile-image img{
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.notify{
+    padding: .6rem;
+}
+.notify:hover,
+.notify:focus,
+.notify:checked{
+    background-color:  rgba(255, 255, 255, .1);
+    border-radius: 50%;
+    transition: .5s background-color;
+}
+
+.plus a{
+    margin-left: -1.1rem;
+}
+
+.plus a:hover{
+    color: #ca159b;
+    transition: .5s color;
+}
+
+.checked{
+    color: lightblue;
+    position: relative;
+    top: 1rem;
+    left: -.3rem;
+}
+
+.dota {
+    width: .3rem;
+    height: .3rem;
+    background-color: #ca159b;
+    border-radius: 50%;
+    margin-left: -1rem;
+  }
+
+  .collect{
+    margin-top: 1rem;
+    line-height: 3rem;
+}
+
+.collect h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 3rem;
+}
+
+.header-text{
+    margin: 0 .8rem;
+}
+
+.header-content p{
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.header-text-content{
+    text-align: center;
+}
+
+  .side-icon span a{
+    margin: 0 1rem 0 0;
+    background-color: rgba(255, 255, 255, .1);
+    padding: .7rem;
+    border-radius: 50%;
+}
+
+.side-icon span a:hover{
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.side-icon{
+    margin-top: 2rem;
+    padding-left: 1rem;
+}
+
+.love{
+    color: red;
+    cursor: pointer;
+}
+
+.option{
+   color: blue; 
+}
+
+.cancel{
+    color: azure;
+}
+
+.download{
+    color: yellow;
+}
+
+.explore{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* From uiverse.io by @satyamchaudharydev */
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #ca159b;
+    --fs-size: 1em;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: 'Aldrich', sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 1px var(--animation-color))
+  }
+
+.now{
+    background-color: #ca159b;
+    border-radius: 6px;
+    padding: .7rem 2rem;
+}
+
+.now:hover{
+    background-color: #121315;
+    border: 1px solid rgb(39, 37, 37);
+}
+
+.create{
+    border: 1px solid rgb(39, 37, 37);
+    padding: .7rem 2rem;
+    border-radius: 6px;
+}
+
+.create:hover{
+    background-color: #ca159b;
+}
+
+.explore a{
+    text-decoration: none;
+    color: white;
+}
+
+.works{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.works h1{
+    font-family: 'Aldrich', sans-serif;
+}
+
+.works p{
+    opacity: .3;
+}
+
+.HorizontalScroll_Item{
+    width: 20rem;
+    background-color: rgb(39, 37, 37);
+    border-radius: 5px;
+}
+
+
+.HorizontalScroll_Item img{
+    width: 20rem;
+    border-radius: 5px 5px 0 0;
+}
+
+.text-on-image{
+    width: 18rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(7px);
+    padding: .6rem 0;
+    margin: -5rem 1rem ;
+    border-radius: 7px;
+}
+
+.text-on p{
+    font-size: .7rem;
+ }
+
+.polaroid-text{
+    margin-top: 7rem;
+    margin-left: .5rem;
+}
+
+.daendle{
+    margin-top: .2rem;
+    font-size: .9rem;
+    color: #ca159b;
+}
+
+.polaroid-text1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .3rem;
+}
+
+.daendle1{
+    font-size: .7rem;
+}
+
+.App{
+    margin-top: 2rem;
+}
+
+.bid a{
+    text-decoration: none;
+    color: white;
+}
+
+.bid{
+    background-color: blue;
+    padding: .6rem;
+    border-radius: 5px;
+}
+
+.bid:hover{
+    background-color: black;
+}
+
+:root {
+    --gutter: .8rem;
+  }
+  
+
+.HorizontalScroll {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    margin: 0 calc(-1 * var(--gutter));
+    margin-bottom: calc(var(--gutter) * 0.5 - 0.5rem * 0.5);
+    padding-bottom: calc(var(--gutter) * 0.5 - 0.5rem * 0.5);
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+  }
+  
+  .HorizontalScroll {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  .HorizontalScroll:hover {
+    scrollbar-color: #ccc #eee;
+  }
+  
+  .HorizontalScroll::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  .HorizontalScroll::-webkit-scrollbar-track {
+    margin: 1rem;
+    background: center / 100% 25% no-repeat
+      linear-gradient(0deg, transparent, transparent);
+    border-radius: 1rem;
+  }
+  .HorizontalScroll:hover::-webkit-scrollbar-track {
+    background-image: linear-gradient(0deg, lightgray, lightgray);
+  }
+  .HorizontalScroll::-webkit-scrollbar-track:hover {
+    background-image: linear-gradient(0deg, silver, silver);
+  }
+  
+  .HorizontalScroll::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 1rem;
+  }
+  .HorizontalScroll:hover::-webkit-scrollbar-thumb {
+    background: lightgrey;
+  }
+  .HorizontalScroll::-webkit-scrollbar-thumb:hover {
+    background: silver;
+  }
+  
+  .HorizontalScroll:before,
+  .HorizontalScroll:after {
+    content: '';
+    min-width: calc(var(--gutter) * 0.5);
+  }
+  
+  .HorizontalScroll_Item {
+    margin: 0 calc(var(--gutter) * 0.5);
+    scroll-snap-align: center;
+  }
+
+  section{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .first-section h1{
+       font-family: 'Aldrich', sans-serif;
+  }
+
+  .first-section p{
+    font-size: .8rem;
+  }
+
+  .image-container {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    grid-template-rows: 1fr;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+
+  .image-container div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-red1{
+    width: 20rem;
+    border-radius: 5px;
+    height: 12rem;
+    background: url("art-nft.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .image-red2{
+    width: 20rem;
+    border-radius: 5px;
+    height: 12rem;
+    background: url("music-nft.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .image-red3{
+    width: 20rem;
+    border-radius: 5px;
+    height: 12rem;
+    background: url("sport-nft.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .image-red4{
+    width: 20rem;
+    border-radius: 5px;
+    height: 12rem;
+    background: url("movie-nft.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .image-container h1{
+    position: relative;
+    text-align: center;
+    top: 5rem;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+  }
+
+  .first-container{
+    max-width: 28rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .first-container h1{
+     font-family: 'Aldrich', sans-serif;
+     font-size: 2.5rem;
+  }
+
+  .first-container-image{
+    margin-top: 1.5rem;
+    width: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .first-container-image img{
+    width: inherit;
+    border-radius: 5px;
+  }
+
+  .place-icon{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 80%;
+    background-color: rgba(255,255,255,.1);
+    height: 3.2rem;
+    width: inherit;
+    align-items: center;
+    display: none;
+}
+
+.first-container-image img:hover ~ .place-icon,
+.first-container-image img:focus ~ .place-icon{
+    display: flex;
+}
+
+.place-icon:hover{
+    display: flex;
+}
+
+
+  .lovelyn{
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .create-bid a{
+    text-decoration: none;
+    color: #121315;
+    background-color: #ca159b;
+    padding: .3rem .8rem;
+    border-radius: 5px;
+  }
+
+  .trending-text{
+    margin-top: 2rem;
+    font-family: 'Aldrich',sans-serif;
+  }
+
+  .image-trending {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-rows: 1fr;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  /* .image-trending img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  .trending-container img{
+     width: 20rem;
+  }
+
+  .trending-container{
+    width: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-white img{
+    width: 7rem;
+    border-radius: 50%;
+    padding: .4rem;
+    outline: 2px solid white;
+  }
+
+
+  .image-white{
+    position: relative;
+    top: -4rem;
+  }
+
+
+  .image-white-text img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  .image-white-text h3{
+    margin-top: .7rem;
+    font-family: 'Aldrich', sans-serif;
+  }
+
+  .image-trending h3{
+    text-align: center;
+  }
+
+  .white-flex{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: .7rem;
+  }
+
+  .white-flex h2{
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+  }
+
+  footer{
+    background-color: black;
+    width: 100%;
+  }
+
+  footer h2{
+    margin-top: 3rem;
+  }
+  footer ul{
+    list-style-type: none;
+  }
+
+  footer li{
+    margin-top: .5rem;
+  }
+
+  .third-container{
+    padding: 2rem 2rem 2rem;
+  }
+
+
+ .nft-brand h2{
+  margin-bottom: 2rem;
+  font-family: 'Aldrich', sans-serif;
+ }
+
+
+ .nft-brand p{
+  margin-top: .5rem;
+ }
+
+ .social-media{
+  margin-top: 1rem;
+ }
+
+ .social-media span a{
+  margin-left: .5rem;
+  font-size: 1.5rem;
+ }
+
+ .social-media span a:hover{
+  color: #ca159b;
+ }
+
+ .forth-section h2{
+  margin-bottom: 1rem;
+  font-family: 'Aldrich', sans-serif;
+ }
+
+ .nft-email input{
+  width: 18rem;
+  padding: .8rem .5rem;
+  border-radius: 5px;
+  border: none;
+ }
+
+ .nft-email span{
+  position: relative;
+  left: -2rem;
+  color: #ca159b;
+ }
+
+ @media screen and (min-width: 800px){
+  .forth-section{
+    display: flex;
+    justify-content: space-between;
+  }
+ }
+
+
+
+  @media screen and (min-width: 1000px){
+    .nft-icon span a{
+        margin-right: 2rem;
+        padding: .5rem 1rem;
+    }
+
+    .collect{
+        margin-top: 1rem;
+        line-height: 4rem;
+    }
+    
+    .collect h1{
+        font-family: 'Aldrich', sans-serif;
+        font-size: 4rem;
+    }
+
+    .image-red1{
+        width: 19rem;
+    }
+
+    .image-red2{
+        width: 19rem;
+    }
+
+    .image-red3{
+        width: 19rem;
+    }
+
+    .image-red4{
+        width: 19rem;
+    }
+
+    .second-section{
+        display: flex;
+        align-items: center;
+    }
+
+    .first-container h1{
+        font-size: 3rem;
+    }
+
+   
+    .forth-section{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (min-width: 1100px){
+    .collect{
+        margin-top: 1rem;
+        line-height: 4rem;
+    }
+
+    .second-section{
+        display: flex;
+        align-items: center;
+    }
+
+
+  }
+
+
+
+

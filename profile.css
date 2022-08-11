@@ -1,0 +1,263 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans', sans-serif;
+}
+body{
+    background-color: #121315;
+}
+
+.profile-container{
+    width: 25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-profile{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+}
+
+.empty a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.empty a:hover{
+    color: #ca159b;
+}
+
+.top-profile span a{
+    margin-right: .5rem;
+    font-size: 1.2rem;
+    color: white;
+    transition: .5s color;
+}
+
+.top-profile span a:hover{
+    color: #ca159b;
+}
+
+.checked{
+    position: relative;
+    left: 14.1rem;
+    top: -1.2rem;
+    color: lightblue;
+}
+
+.top-profile h4{
+    font-family: 'Aldrich', sans-serif;
+    color: white;
+}
+
+span a{
+    text-decoration: none;
+}
+
+.profile-image1{
+    margin-top: 1rem;
+}
+
+.profile-image1 img{
+    width: 5rem;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+.profile-image1 h3{
+    text-align: center;
+    color: white;
+    margin-top: .5rem;
+}
+
+.profile-image1 p{
+    text-align: center;
+    color: white;
+    margin-top: .2rem;
+    opacity: .3;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.profile-amount{
+    background-color: rgba(255, 255, 255, .08);
+    width: 13rem;
+    padding: .3rem 0 .3rem 0;
+    border-radius: 5px;
+    text-align: center;
+    color:  white;
+    margin-top: .4rem;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.profile-amount p{
+    opacity: .3;
+}
+
+.balance-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.balance-container span a{
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 1rem;
+    transition: .5s color;
+}
+
+.balance-container span a:hover{
+    color: #ca159b;
+}
+
+
+.balance{
+    width: 13rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.balance h3{
+    margin-left: .5rem;
+}
+
+.eth{
+    text-transform: uppercase;
+    opacity: revert;
+    color: #ca159b;
+}
+
+
+.balance span a{
+    font-size: 1.5rem;
+    color: #ca159b;
+    margin: 0 .5rem 0 .5rem;
+}
+
+.profile-follower{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.post{
+    background-color: #939607;
+    padding-left: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: 2rem;
+    border-radius: 5px;
+}
+
+
+.followers{
+    background-color: rgba(255, 255, 255, .08);
+    padding-left: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: 1.5rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.post p,
+.sub p{
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.followers p{
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.sub{
+    background-color: rgba(255, 255, 255, .08);
+    padding-left: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: 1.5rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.notification{
+    margin-top: 2rem;
+}
+
+.notification-heading{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.notification-heading h3{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.circled p{
+    font-size: .7rem;
+    text-align: center;
+    padding-top: .04rem;
+}
+
+.circled{
+    background-color: #ca159b;
+    border-radius: 50%;
+    width: .8rem;
+    height: .8rem;
+    position: relative;
+    bottom: .3rem;
+}
+
+.first-post{
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, .08);
+    padding: .7rem 0 .7rem .5rem;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.first-post p{  
+    font-family: 'Poppins', sans-serif; 
+}
+
+.first-post-image{
+    display: flex;
+}
+
+.first-post-image p{
+    margin-top: 1.2rem;
+    margin-left: .4rem;
+    font-family: 'Poppins', sans-serif; 
+    opacity: .3;
+}
+
+.first-post-image img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
